@@ -1,0 +1,18 @@
+Codebook for the Coursera "Getting and Cleaning Data" Project
+
+Subject_ID: the identifier of the the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+
+Activity: the activity performed by the specific subject identified by Subject_ID. The range here is WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING. These activities were numbered in the original data set as given in the activity_labels.txt file.
+
+features.txt identifies the 561 measurements recorded. Only some of these (the mean and standard deviation) were required so these were extracted from the data set based on the variable names identified in features.txt. The resulting names were modified to produce more meaningful names (albeit long ones!). 
+
+I first eliminated the brackets from the names. 
+
+Then replaced '-X- with the more meaningful 'on X-axis'
+Similarly for Y and Z. 
+Those measurements identified in features_info.txt as being on all three dimensions (XYZ) had 'on 3 axes' appended to them. 
+
+I substituted '-mean' at the end of the varaible name for 'Mean' at the beginning, again for readability.
+Similarly for Standard Deviation measurements.
+
+Finally I reworded the names based on the information on what was actually being measured as described in features_info.txt.
